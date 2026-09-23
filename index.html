@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p id="parag">Click the button to start. </p>
+    <button onclick="go()">start</button>
+    <button onclick="change()">Change the box's color</button>
+    <button onclick="repeat()">Reset</button>
+    <div id="box">box</div>
+    <script>
+        x=prompt("whats your name?")
+        alert("hello " + x + " it's nice to meet you")
+        function change(){
+            document.getElementById("box").style.background="red";
+            document.getElementById("box").style.fontFamily="fantasy";
+        }
+        function repeat(){
+            document.getElementById("box").style.backgroundColor="rgb(187, 187, 187)";
+            document.getElementById("box").style.fontFamily="sans-serif";
+        }
+        function go(){
+            document.getElementById("parag").innerHTML= "Hey " + x+ "! this is my website";
+        }
+    </script>
+</body>
+</html>
